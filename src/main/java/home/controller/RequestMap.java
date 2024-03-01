@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode			//필수. vo (불변객체) 로 정의하기 - Map의 key 객체로 사용하기 위함.

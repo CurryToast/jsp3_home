@@ -9,7 +9,12 @@ public class RequestControllerMapping {
 	private static final Map<RequestMap, Controller> mapping = new HashMap<>();
 	
 	public static void init() {
-		mapping.put(new RequestMap("/customer", "GET"), null);
+		mapping.put(new RequestMap("/customer/list", "GET"), new CustomerListController());
+		mapping.put(new RequestMap("/customer/join", "GET"), new CustomerJoinController());
+		mapping.put(new RequestMap("/customer/join", "POST"), new CustomerJoinController());
+		mapping.put(new RequestMap("/product/list", "GET"), new ProductListController());
+		mapping.put(new RequestMap("/product/register", "GET"), new ProductRegisterController());
+		mapping.put(new RequestMap("/product/register", "POST"), new ProductRegisterController());
 	}
 	
 	public static Controller getController(RequestMap key) {

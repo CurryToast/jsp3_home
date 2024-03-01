@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import home.dto.CustomerDto;
-import home.mybatis.SqlSessionBean;
+import mybatis.SqlSessionBean;
 
 public class CustomerDao {
 	private SqlSessionFactory sessionFactory = SqlSessionBean.getSessionFactory();

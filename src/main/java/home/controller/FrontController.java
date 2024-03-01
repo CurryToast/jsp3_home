@@ -19,6 +19,7 @@ public class FrontController extends HttpServlet {
 	// 서블릿이 톰캣에서 실행되기 시작할 때 (메모리에 로드될 때) 실행하는 메소드
 	@Override
 	public void init() throws ServletException {
+		RequestControllerMapping.init();
 	}
 
 	// get, post 방식 상관없이 요청을 처리하는 메소드

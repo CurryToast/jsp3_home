@@ -8,7 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 import home.dto.CategoryDto;
 import home.dto.ProductDto;
-import home.mybatis.SqlSessionBean;
+import mybatis.SqlSessionBean;
 
 public class ProductDao {
 	private SqlSessionFactory sessionFactory = SqlSessionBean.getSessionFactory();
