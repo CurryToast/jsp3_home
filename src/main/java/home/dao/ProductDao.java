@@ -19,28 +19,14 @@ public class ProductDao {
 		sqlSession.close();
 		return list;
 	}
-	
+
 	public List<ProductDto> search(Map<String, Object> map) {
 		SqlSession sqlSession = sessionFactory.openSession();
 		List<ProductDto> list = sqlSession.selectList("tblproducts.search", map);
 		sqlSession.close();
 		return list;
 	}
-	
-	public List<ProductDto> selectByCategory(String category) {
-		SqlSession sqlSession = sessionFactory.openSession();
-		List<ProductDto> list = sqlSession.selectList("tblproducts.selectByCategory", category);
-		sqlSession.close();
-		return list;
-	}
-	
-	public List<ProductDto> selectByPname(String pname) {
-		SqlSession sqlSession = sessionFactory.openSession();
-		List<ProductDto> list = sqlSession.selectList("tblproducts.selectByPname", pname);
-		sqlSession.close();
-		return list;
-	}
-	
+
 	public List<CategoryDto> selectCategory() {
 		SqlSession sqlSession = sessionFactory.openSession();
 		List<CategoryDto> categoryList = sqlSession.selectList("tblproducts.selectCategory");

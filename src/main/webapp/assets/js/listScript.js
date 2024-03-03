@@ -1,0 +1,1 @@
+document.getElementById('clear').addEventListener('click', () => { location.href = location.pathname; });

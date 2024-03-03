@@ -1,6 +1,7 @@
 package home.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -18,16 +19,9 @@ public class CustomerDao {
 		return list;
 	}
 	
-	public CustomerDto selectById(String id) {
+	public List<CustomerDto> search(Map<String, Object> map) {
 		SqlSession sqlSession = sessionFactory.openSession();
-		CustomerDto dto = sqlSession.selectOne("tblcustomer.selectById", id);
-		sqlSession.close();
-		return dto;
-	}
-	
-	public List<CustomerDto> selectByNameAndAge(CustomerDto dto) {
-		SqlSession sqlSession = sessionFactory.openSession();
-		List<CustomerDto> list = sqlSession.selectList("tblcustomer.selectByNameAndAge", dto);
+		List<CustomerDto> list = sqlSession.selectList("tblcustomer.search", map);
 		sqlSession.close();
 		return list;
 	}
