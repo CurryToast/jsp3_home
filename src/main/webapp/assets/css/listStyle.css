@@ -12,6 +12,19 @@ ul {
 	max-width: 100%;
 }
 
+.list-header li {
+	cursor: pointer;
+}
+
+.list-header li:hover {
+	background-color: lightgrey;
+}
+
 li {
+	padding: 12px;
 	min-width: fit-content;
+}
+
+form > div > p {
+	display: inline-block;
 }

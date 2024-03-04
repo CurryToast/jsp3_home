@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>JSP3 Product</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
 </head>
 <body>
 	<form style="display: flex; justify-content: space-around; align-items: center;">
@@ -48,11 +48,11 @@
 		</div>
 	</form>
 	<main>
-		<ul>
-			<li>상품코드</li>
-			<li>카테고리</li>
-			<li>상품명</li>
-			<li>가격</li>
+		<ul class="list-header">
+			<li class="pcode">상품코드</li>
+			<li class="category">카테고리</li>
+			<li class="pname">상품명</li>
+			<li class="price">가격</li>
 		</ul>
 		<c:forEach items="${list}" var="dto">
 		<ul>

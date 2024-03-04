@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>JSP3 Customer List</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
 </head>
 <body>
 	<form style="display: flex; justify-content: space-around; align-items: center;">
@@ -28,12 +28,12 @@
 		</div>
 	</form>
 	<main>
-		<ul>
-			<li>고객 ID</li>
-			<li>이름</li>
-			<li>이메일</li>
-			<li>나이</li>
-			<li>등록 일시</li>
+		<ul class="list-header">
+			<li class="custom_id">고객 ID</li>
+			<li class="name">이름</li>
+			<li class="email">이메일</li>
+			<li class="age">나이</li>
+			<li class="reg_date">등록 일시</li>
 		</ul>
 		<c:forEach items="${list}" var="dto" varStatus="status">
 			<ul>

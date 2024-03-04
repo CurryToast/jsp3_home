@@ -45,6 +45,7 @@ public class ProductListController implements Controller {
 			String desc = request.getParameter("desc");
 			if (desc != null && desc.equals("true")) {
 				map.put("desc", desc);
+				request.setAttribute("desc", desc);
 			}
 		}
 
