@@ -18,7 +18,7 @@ public class ProductListController implements Controller {
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String category = request.getParameter("category");
-		String pname = request.getParameter("pname");
+		String keyword = request.getParameter("keyword");
 		String from = request.getParameter("from");
 		String to = request.getParameter("to");
 		String column = request.getParameter("column");
@@ -28,9 +28,9 @@ public class ProductListController implements Controller {
 			map.put("category", category);
 			request.setAttribute("category", category);
 		}
-		if (pname != null && pname.isEmpty() == false) {
-			map.put("pname", pname);
-			request.setAttribute("pname", pname);
+		if (keyword != null && keyword.isEmpty() == false) {
+			map.put("keyword", keyword);
+			request.setAttribute("keyword", keyword);
 		}
 		if (
 			from != null && from.isEmpty() == false &&

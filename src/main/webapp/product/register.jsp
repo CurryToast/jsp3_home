@@ -9,6 +9,7 @@
 <title>JSP3 Product Register</title>
 </head>
 <body>
+	<%@ include file="../header.jsp" %>
 	<main>
 		<form action="" method="post">
 			<div>

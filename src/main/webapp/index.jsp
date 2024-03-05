@@ -7,6 +7,7 @@
 <title>JSP3 Home</title>
 </head>
 <body>
+	<%@ include file="header.jsp" %>
 	<main>
 		<h3>JSP3 HOME</h3>
 		<ul>

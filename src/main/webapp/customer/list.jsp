@@ -9,6 +9,7 @@
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
 </head>
 <body>
+	<%@ include file="../header.jsp" %>
 	<form style="display: flex; justify-content: space-around; align-items: center;">
 		<div>
 			<p>고객 ID</p>

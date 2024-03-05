@@ -9,6 +9,7 @@
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/listStyle.css" >
 </head>
 <body>
+	<%@ include file="../header.jsp" %>
 	<form style="display: flex; justify-content: space-around; align-items: center;">
 		<div>
 			<p>상품코드</p>
@@ -36,7 +37,7 @@
 		</div>
 		<div>
 			<p>상품명</p>
-			<input type="text" name="pname" value="${pname}">
+			<input type="text" name="keyword" value="${pname}">
 		</div>
 		<div>
 			<p>가격</p>

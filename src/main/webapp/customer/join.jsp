@@ -8,6 +8,7 @@
 <title>JSP3 Join</title>
 </head>
 <body>
+	<%@ include file="../header.jsp" %>
 	<main>
 		<form action="" method="post">
 			<div>

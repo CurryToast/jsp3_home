@@ -10,7 +10,7 @@
 		<where>
 			<!-- if의 test 값은 조건식입니다. -->
 			<if test="keyword!=null">
-				pname like '%' || #{pname} || '%'
+				pname like '%' || #{keyword} || '%'
 			</if>
 			<if test="category!=null">
 				<!--
